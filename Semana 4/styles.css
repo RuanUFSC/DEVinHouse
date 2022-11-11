@@ -23,6 +23,33 @@ body {
     padding: 10px 50px;
 }
 
+.main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 20px 40px;
+    margin: auto;
+  }
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 40vw;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .footer {
     background-color: #ddd;
     padding: 20px 75px 75px 100px;
