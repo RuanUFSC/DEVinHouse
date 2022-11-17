@@ -1,0 +1,22 @@
+body {
+    text-align: center; 
+    background-color: aliceblue;
+}    
+img {
+    padding: 20px;
+    margin: 10px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.divContainer {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    background-color: rgba(82, 247, 247, 0.205);
+    margin: 20px;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
