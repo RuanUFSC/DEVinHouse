@@ -9,6 +9,11 @@ import { notifications } from './notifications';
 export class NotificationListComponent {
   notifications = notifications;
   markRead(notification: { read: boolean}){
-    notification.read = true;
+    if(notification.read) { 
+      notification.read = false 
+    }
+    else {
+      notification.read = true 
+    };
   }
 }
