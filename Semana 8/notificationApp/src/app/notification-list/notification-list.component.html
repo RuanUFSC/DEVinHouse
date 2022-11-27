@@ -2,7 +2,7 @@
     <ntap-header></ntap-header>
     <div class="container m-4">
         <ul class="list-group">
-            <li *ngFor="let notification of notifications" class="list-group-item m-2">
+            <li *ngFor="let notification of notifications" [ngClass]="{ 'read': notification.read}" class="list-group-item m-2">
                 <h4>{{notification.title}}</h4>
                 <h6>{{notification.desc}}</h6>
                 <small>{{notification.time}}</small><br>
