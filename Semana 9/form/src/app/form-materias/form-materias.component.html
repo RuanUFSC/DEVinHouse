@@ -1,0 +1,61 @@
+<div class="container d-flex flex-row">
+    <div class="col-5 my-auto">
+        <img class="img-fluid w-100" src="https://img.freepik.com/free-vector/mobile-login-concept-illustration_114360-83.jpg?w=740&t=st=1669684740~exp=1669685340~hmac=0866f7da73a82296765d83dbd47c7dc95f825d73ec3c39e33f6d1a1eeeb4a332" alt="login">
+    </div>
+    <div class="col-5 my-4 mx-5 p-4 bg-light text-primary">
+        <h2>Registro de matérias</h2>
+        <hr>
+        <form class="row g-3">
+            <div class="col-6">
+            <label for="nome">Nome</label>
+            <input type="text" required class="form-control" id="nome" placeholder="Ex: Matemática">
+            </div>
+            <div class="col-6">
+            <label for="cargaHoraria">Carga horária (horas/aula)</label>
+            <input type="number" required min="0" class="form-control" id="cargaHoraria" placeholder="Ex: 5h">
+            </div>
+            <div class="col-12">
+                <label for="escola">Escola</label>
+                <input type="text" required class="form-control" id="escola" placeholder="Ex: Instituto Federal de Santa Catarina">
+            </div>
+            <div class="col-12">
+                <label for="opcional">Matéria é opcional?</label>
+                <select class="form-select" required id="opcional">
+                    <option value="" disabled selected>Selecione uma opção</option>
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select>
+            </div>
+            <div class="col-12">
+                <label for="professor" required class="py-2">Professor</label>
+                <div class="form-check" id="otavio">
+                    <input class="form-check-input" type="checkbox" id="otavio">
+                    <label class="form-check-label text-dark" for="otavio">
+                      Otávio
+                    </label>
+                </div>
+                <div class="form-check" id="vivian">
+                    <input class="form-check-input" type="checkbox" id="vivian">
+                    <label class="form-check-label text-dark" for="vivian">
+                      Vivian
+                    </label>
+                </div>
+                <div class="form-check" id="leandro">
+                    <input class="form-check-input" type="checkbox" id="leandro">
+                    <label class="form-check-label text-dark" for="leandro">
+                      Leandro
+                    </label>
+                </div>
+                <div class="form-check" id="claudia">
+                    <input class="form-check-input" type="checkbox" id="claudia">
+                    <label class="form-check-label text-dark" for="claudia">
+                        Cláudia
+                    </label>
+                </div>
+            </div>
+            <div class="col-12">
+            <button type="submit" class="btn btn-primary col-12">Registrar</button>
+            </div>
+        </form>
+    </div>
+</div>
