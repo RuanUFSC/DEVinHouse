@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { FormularioComponent } from './formulario/formulario.component';
 import { InformacoesComponent } from './informacoes/informacoes.component';
 import { FormMateriasComponent } from './form-materias/form-materias.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormularioComponent,
     InformacoesComponent,
-    FormMateriasComponent
+    FormMateriasComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
