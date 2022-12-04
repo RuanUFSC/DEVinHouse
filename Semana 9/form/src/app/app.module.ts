@@ -7,6 +7,7 @@ import { FormularioComponent } from './formulario/formulario.component';
 import { InformacoesComponent } from './informacoes/informacoes.component';
 import { FormMateriasComponent } from './form-materias/form-materias.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { ItemCardComponent } from './itemCard/itemCard.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     FormularioComponent,
     InformacoesComponent,
     FormMateriasComponent,
-    NavbarComponent
+    NavbarComponent,
+    ItemCardComponent
   ],
   imports: [
     BrowserModule,
