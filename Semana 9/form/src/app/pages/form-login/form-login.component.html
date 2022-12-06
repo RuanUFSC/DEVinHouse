@@ -1,0 +1,19 @@
+<div class="container d-flex flex-row">
+    <div class="col-5 my-auto mx-5 p-4 bg-light text-primary">
+        <h2>Registro de usuário</h2>
+        <hr>
+        <form class="row g-3">
+            <div class="col-6">
+            <label for="email">Email</label>
+            <input type="text" #email required class="form-control" id="email" placeholder="user@mail.com">
+            </div>
+            <div class="col-6">
+                <label for="senha">Senha</label>
+                <input type="password" #senha required class="form-control" id="senha" placeholder="********">
+            </div>
+            <div class="col-12">
+            <button type="button" (click)="saveLogin(email.value, senha.value)" class="btn btn-primary col-12">Registrar</button>
+            </div>
+        </form>
+    </div>
+</div>

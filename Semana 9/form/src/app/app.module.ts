@@ -3,12 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FormularioComponent } from './formulario/formulario.component';
-import { InformacoesComponent } from './informacoes/informacoes.component';
-import { FormMateriasComponent } from './form-materias/form-materias.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { ItemCardComponent } from './itemCard/itemCard.component';
+import { FormularioComponent } from './pages/formulario/formulario.component';
+import { InformacoesComponent } from './pages/informacoes/informacoes.component';
+import { FormMateriasComponent } from './pages/form-materias/form-materias.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { ItemCardComponent } from './pages/itemCard/itemCard.component';
 import { FormsModule } from '@angular/forms';
+import { FormLoginComponent } from './pages/form-login/form-login.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FormsModule } from '@angular/forms';
     InformacoesComponent,
     FormMateriasComponent,
     NavbarComponent,
-    ItemCardComponent
+    ItemCardComponent,
+    FormLoginComponent
   ],
   imports: [
     BrowserModule,
