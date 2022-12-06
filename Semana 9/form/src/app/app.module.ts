@@ -8,6 +8,7 @@ import { InformacoesComponent } from './informacoes/informacoes.component';
 import { FormMateriasComponent } from './form-materias/form-materias.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ItemCardComponent } from './itemCard/itemCard.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ItemCardComponent } from './itemCard/itemCard.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
