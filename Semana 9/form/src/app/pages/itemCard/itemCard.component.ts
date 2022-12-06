@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { LocalStorageService } from 'src/app/services/local-storage.service';
 
 @Component({
   selector: 'formu-itemCard',
@@ -7,4 +8,8 @@ import { Component, Input } from '@angular/core';
 })
 export class ItemCardComponent {
   @Input() personagem: any = "";
+
+  constructor() {}
+  ngOnInit(){}
+
 }
