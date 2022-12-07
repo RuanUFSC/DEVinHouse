@@ -37,6 +37,10 @@ export class AppComponent implements OnInit{
     titulo = 'batatinha';
     descricao = 'frita';
 
+    enviar(retorno: any){
+      console.log(retorno);
+   }
+
     ngOnInit() {}
 }
 

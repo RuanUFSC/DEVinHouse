@@ -1,0 +1,9 @@
+<div class="container mt-4 col-5 d-flex flex-column justify-content-around">
+    <p>Insira seu texto abaixo e observe o console do navegador :)</p>
+    <input 
+        type="text" 
+        class="bg-secondary text-light" 
+        [(ngModel)]="text"
+        (input)="enviar()"
+    >
+</div>
