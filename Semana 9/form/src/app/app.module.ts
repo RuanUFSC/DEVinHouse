@@ -10,6 +10,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { ItemCardComponent } from './pages/itemCard/itemCard.component';
 import { FormsModule } from '@angular/forms';
 import { FormLoginComponent } from './pages/form-login/form-login.component';
+import { SearchComponent } from './pages/search/search.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FormLoginComponent } from './pages/form-login/form-login.component';
     FormMateriasComponent,
     NavbarComponent,
     ItemCardComponent,
-    FormLoginComponent
+    FormLoginComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
