@@ -1,0 +1,12 @@
+<div class="container">
+    <ul class="list-group">
+        <li *ngFor="let notification of notifications" [ngClass]="{ 'read': notification.read}" class="list-group-item my-2">
+            <h4>{{notification.title}}</h4>
+            <h6>{{notification.desc}}</h6>
+            <small>{{notification.time}}</small><br>
+            <button class="btn btn-secondary my-1" (click)="markRead(notification)">
+                Marcar como lida
+            </button>
+        </li>
+    </ul>
+</div>
