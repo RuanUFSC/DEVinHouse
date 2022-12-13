@@ -1,6 +1,13 @@
 <ul class="btn-group" role="group" aria-label="Basic radio toggle button group">
   <li *ngFor="let button of statusButtons"  class="list-group-item">
-    <input type="radio" class="btn-check" name="btnradio" id="{{ button }}" [checked]="button == 'Todos'">
+    <input 
+      type="radio" 
+      class="btn-check" 
+      name="btnradio" 
+      id="{{ button }}" 
+      [checked]="button == 'Todos'"
+      (click)="filtrar.emit({ tipo: button})"
+    >
     <label class="btn btn-outline-secondary" for="{{ button }}">{{ button }}</label>
   </li>
 </ul>
