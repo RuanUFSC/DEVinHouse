@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'ntap-filter',
@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class FilterComponent {
   statusButtons = ['Todos', 'Não Lidos', 'Lidos'];
+  @Output() filtrar: EventEmitter<any> = new EventEmitter();
+  filtro(){
+    this.filtrar.emit()
+  }
 }
