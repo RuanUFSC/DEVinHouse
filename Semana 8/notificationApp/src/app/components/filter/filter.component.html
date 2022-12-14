@@ -6,7 +6,7 @@
       name="btnradio" 
       id="{{ button }}" 
       [checked]="button == 'Todos'"
-      (click)="filtrar.emit({ tipo: button})"
+      (click)="filtro({ tipo: button})"
     >
     <label class="btn btn-outline-secondary" for="{{ button }}">{{ button }}</label>
   </li>

@@ -8,7 +8,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
 export class FilterComponent {
   statusButtons = ['Todos', 'Não Lidos', 'Lidos'];
   @Output() filtrar: EventEmitter<any> = new EventEmitter();
-  filtro(){
-    this.filtrar.emit()
+  filtro(tipo: any){
+    this.filtrar.emit(tipo)
   }
 }
