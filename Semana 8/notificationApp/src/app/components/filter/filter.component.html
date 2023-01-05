@@ -6,8 +6,9 @@
       name="btnradio" 
       id="{{ button }}" 
       [checked]="button == 'Todos'"
+      routerLink="/home/{{ button }}"
       (click)="filtro({ tipo: button})"
-    >
+      >
     <label class="btn btn-outline-secondary" for="{{ button }}">{{ button }}</label>
   </li>
 </ul>

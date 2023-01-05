@@ -1,14 +1,20 @@
 <nav class="navbar navbar-dark bg-secondary">
-    <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-        <img 
-            src="https://ziptime.com.br/wp-content/uploads/2018/10/notificacoes-constantes.gif" 
-            alt="Logo" 
-            width="30" 
-            height="30" 
-            class="d-inline-block align-text-top"
-        >
-        Notification App
-    </a>
+    <div class="container-fluid d-flex flex-row justify-content-start">
+        <a class="navbar-brand" routerLink="/">
+            <img 
+                src="https://ziptime.com.br/wp-content/uploads/2018/10/notificacoes-constantes.gif" 
+                alt="Logo" 
+                width="30" 
+                height="30" 
+                class="d-inline-block align-text-top"
+            >
+            Notification App
+        </a>
+        <button class="btn btn-secondary" routerLink="/home">
+            Home
+        </button>
+        <button class="btn btn-secondary" routerLink="/sobre">
+            Sobre
+        </button>
     </div>
 </nav>

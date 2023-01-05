@@ -6,21 +6,10 @@ import { HomeComponent } from './pages/home/home.component';
 const routes: Routes = [
 	{
 		path: 'home',
+		component: HomeComponent,
 		children: [
 			{
-				path: '',
-				component: HomeComponent
-			},
-			{
-				path: 'lidos',
-				component: HomeComponent
-			},
-			{
-				path: 'nao-lidos',
-				component: HomeComponent
-			},
-			{
-				path: 'todos',
+				path: ':filter',
 				component: HomeComponent
 			}
 		]
