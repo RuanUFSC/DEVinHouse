@@ -1,8 +1,8 @@
 <div class="container body mt-4">
-    <ntap-filter (filtrar)="filtro($event)" ></ntap-filter>
+    <ntap-filter (filterEvent)="filter($event)" ></ntap-filter>
     <div class="container">
         <ul class="list-group">
-            <li *ngFor="let notification of notifications" [ngClass]="{ 'read': notification.read}" class="list-group-item my-2">
+            <li *ngFor="let notification of filteredNotifications" [ngClass]="{ 'read': notification.read}" class="list-group-item my-2">
                 <h4>{{notification.title}}</h4>
                 <h6>{{notification.desc}}</h6>
                 <small>{{notification.time}}</small><br>
