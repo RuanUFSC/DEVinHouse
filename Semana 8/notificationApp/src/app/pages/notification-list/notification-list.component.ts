@@ -20,7 +20,7 @@ export class NotificationListComponent implements OnInit{
   ngOnInit() {
     this.route.params.subscribe((params)=>{
       this.chosenFilter = params['routeFilter'];
-
+      if(this.chosenFilter == undefined) this.chosenFilter = "todos";
       this.filteredNotifications = [];
       this.notifications.forEach((notification: any) => {
         if (this.chosenFilter === 'lidos') {
