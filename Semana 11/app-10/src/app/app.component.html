@@ -1,26 +1,7 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#" (click)="changePage('padrao')">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#" (click)="changePage('home')">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#" (click)="changePage('info')">Informações</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#" (click)="changePage('preco')">Preços</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-
-<div [ngSwitch]="page">
-  <h2 *ngSwitchCase="'home'">Estou na página de Home</h2>
-  <h2 *ngSwitchCase="'preco'">Estou na página de Preços</h2>
-  <h2 *ngSwitchCase="'info'">Estou na página de Informações</h2>
-  <h2 *ngSwitchDefault>Página padrão</h2>
+<h1 class="text-center pt-5">Coleção de imagens</h1>
+<div class="d-flex flex-row justify-content-center mx-auto my-5">
+    <div *ngFor="let foto of arrayFotos" class="col-2 p-2 d-flex flex-column justify-content-center">  
+      <img src="{{foto.url}}" alt="{{foto.description}}" width="300px">
+      <h3>{{foto.description}}</h3>
+    </div>
 </div>
