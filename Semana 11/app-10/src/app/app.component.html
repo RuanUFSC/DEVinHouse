@@ -1,5 +1,7 @@
-<input [(ngModel)]="inputValue">
-<div [ngSwitch]="inputValue">
+<select [(ngModel)]="opcaoSelecionada">
+  <option *ngFor="let genero of generos" value="{{genero}}">{{genero}}</option>
+</select>
+<div [ngSwitch]="opcaoSelecionada"> 
   <p>Digite um gênero e te indico um filme ou série ;)</p>
   <p *ngSwitchCase="'comedia'">Superbad é uma ótima indicação</p>
   <p *ngSwitchCase="'acao'">Sem dúvidas O poderoso Chefão</p>

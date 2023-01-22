@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  inputValue: string = '';
+  opcaoSelecionada: string = '';
+  selectedOption: string = '';
+  generos = ['acao', 'comedia', 'aventura', 'aleatorio']
 }
