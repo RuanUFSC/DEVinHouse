@@ -1,10 +1,26 @@
-<select [(ngModel)]="opcaoSelecionada">
-  <option *ngFor="let genero of generos" value="{{genero}}">{{genero}}</option>
-</select>
-<div [ngSwitch]="opcaoSelecionada"> 
-  <p>Digite um gênero e te indico um filme ou série ;)</p>
-  <p *ngSwitchCase="'comedia'">Superbad é uma ótima indicação</p>
-  <p *ngSwitchCase="'acao'">Sem dúvidas O poderoso Chefão</p>
-  <p *ngSwitchCase="'aventura'">Indiana Jones, com certeza</p>
-  <p *ngSwitchDefault>Na dúvida escolhe Black Mirror</p>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#" (click)="changePage('padrao')">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#" (click)="changePage('home')">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" (click)="changePage('info')">Informações</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" (click)="changePage('preco')">Preços</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div [ngSwitch]="page">
+  <h2 *ngSwitchCase="'home'">Estou na página de Home</h2>
+  <h2 *ngSwitchCase="'preco'">Estou na página de Preços</h2>
+  <h2 *ngSwitchCase="'info'">Estou na página de Informações</h2>
+  <h2 *ngSwitchDefault>Página padrão</h2>
 </div>

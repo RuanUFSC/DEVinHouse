@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  opcaoSelecionada: string = '';
-  selectedOption: string = '';
-  generos = ['acao', 'comedia', 'aventura', 'aleatorio']
+  page: string = '';
+  changePage(valorClicado: any){
+    this.page = valorClicado;
+  }
 }
