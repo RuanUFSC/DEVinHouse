@@ -2,4 +2,36 @@
   <span>{{ '12345678999' | cpf: true }}</span>
   <br/>
   <span>{{ '12345678999' | cpf: false }}</span>
- 
+
+  <div [ngClass]="classes" >
+    Conteúdo
+  </div>
+
+  <p>Lista de compras</p>
+  <ul>
+    <li *ngFor="let item of itens">
+      {{item}}
+    </li>
+  </ul>
+
+  <div>
+    <h3>Digite uma senha:</h3>
+    <input type="password" min="5" [(ngModel)]="password"/>
+    <p *ngIf="password.length > 5">
+      Senha possui mais que 5 caracteres, está tudo certo :)
+    </p>
+    <p *ngIf="password.length <= 5">
+      Senha deve conter mais que 5 caracteres
+    </p>
+  </div>
+
+  <div>
+    <h3>Digite uma senha:</h3>
+    <input type="password" min="5" [(ngModel)]="password" />
+    <p *ngIf="password.length > 5; else templateElse">
+      Senha possui mais que 5 caracteres, está tudo certo :)
+    </p>
+    <ng-template #templateElse>
+      <p>Senha deve conter mais que 5 caracteres</p>
+    </ng-template>
+  </div>
