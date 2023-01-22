@@ -1,4 +1,8 @@
-
-<button class="card card-small" (click)="changeValor()" [ngClass]=classes>
-  <span> + New Component</span>
-</button>
+<input [(ngModel)]="inputValue">
+<div [ngSwitch]="inputValue">
+  <p>Digite um gênero e te indico um filme ou série ;)</p>
+  <p *ngSwitchCase="'comedia'">Superbad é uma ótima indicação</p>
+  <p *ngSwitchCase="'acao'">Sem dúvidas O poderoso Chefão</p>
+  <p *ngSwitchCase="'aventura'">Indiana Jones, com certeza</p>
+  <p *ngSwitchDefault>Na dúvida escolhe Black Mirror</p>
+</div>
