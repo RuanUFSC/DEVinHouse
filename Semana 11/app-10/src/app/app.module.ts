@@ -7,7 +7,8 @@ import { AppComponent } from './app.component';
 import { CaptalizePhillipsPipe } from './pipes/captalize-phillips.pipe';
 import { CpfPipe } from './pipes/cpf.pipe';
 import { ModalComponent } from './components/modal/modal.component';
-import { CardExemploComponent } from './components/card-exemplo/card-exemplo.component'
+import { CardExemploComponent } from './components/card-exemplo/card-exemplo.component';
+import { FormValidacaoComponent } from './components/form-validacao/form-validacao.component'
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { CardExemploComponent } from './components/card-exemplo/card-exemplo.com
     CaptalizePhillipsPipe,
     CpfPipe,
     ModalComponent,
-    CardExemploComponent
+    CardExemploComponent,
+    FormValidacaoComponent
   ],
   imports: [
     BrowserModule,

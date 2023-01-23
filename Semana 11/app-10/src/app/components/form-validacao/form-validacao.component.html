@@ -1,0 +1,10 @@
+<div class="container mx-auto my-4 text-center">
+    <label for="validationInput">
+        <h1>Informe uma palavra com 5 dígitos:</h1>   
+        <input type="text" [(ngModel)]="name" name="validationInput" id="validationInput"/>
+        <h5 class="text-success" *ngIf="name.length > 5; else templateElse">Parabéns, sua palavra está de acordo com as regras</h5>
+        <ng-template #templateElse>
+            <h5 class="text-danger" *ngIf="name.length > 0">Sua palavra está pequena, tente uma maior :)</h5>
+        </ng-template>
+    </label>
+</div>
