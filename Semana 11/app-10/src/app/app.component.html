@@ -1,15 +1,7 @@
-<div class="card">
-  <a (click)="showModal=true">Open Demo Modal</a>
-</div>
-
-<div *ngIf="showModal" class="modal">
-  <div class="modal__content">
-    <h1>Example modal</h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Error minima
-      libero veniam, modi corrupti doloremque repellendus vitae mollitia. Ipsum
-      voluptatibus ea ab quos molestiae at expedita maiores dolore a corrupti!
-    </p>
-    <a class="modal__close" href="#" (click)="showModal=false">&times;</a>
-  </div>
-</div>
+<app-modal>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error minima
+    libero veniam, modi corrupti doloremque repellendus vitae mollitia. Ipsum
+    voluptatibus ea ab quos molestiae at expedita maiores dolore a corrupti!
+  </p>
+</app-modal>
