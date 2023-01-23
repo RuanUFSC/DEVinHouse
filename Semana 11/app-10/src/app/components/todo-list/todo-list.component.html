@@ -1,0 +1,13 @@
+<div class="container mx-auto my-4 text-center d-flex flex-column">
+    <label>
+      <h2>Adicione uma tarefa a ser realizada:</h2>
+      <input type="text" class="col-4 my-2" [(ngModel)]="task" />
+    </label>
+    <button class="btn btn-secondary col-4 mx-auto my-2" (click)="addTodo()">Adicionar</button>  
+    <ul class="col-4 mx-auto my-2" *ngIf="taskList.length > 0; else templateElse">
+      <li class="text-break text-justify mt-2" *ngFor="let task of taskList">{{ task }}</li>
+    </ul>  
+    <ng-template #templateElse>
+      <p>A lista de tarefas está vazia</p>
+    </ng-template>
+</div>
